@@ -6,7 +6,7 @@ nav {
     box-sizing: border-box;
 }
 .night-sky-bg {
-    background-image: url('/img/dark.jpg'); /* Replace 'night-sky.jpg' with your actual image path */
+    background-image: url('../img/dark.jpg'); /* Replace 'night-sky.jpg' with your actual image path */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
