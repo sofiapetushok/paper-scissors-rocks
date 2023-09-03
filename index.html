@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Document</title>
+</head>
+<body class="night-sky-bg"> 
+    <header class="blue darken-2 white-text">
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="/img/rock_dark.jpg" class="brand-logo">Rock Paper Scissors</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container ">
+        <section>
+            <div class="center-align">
+                <h4>Choose your weapon</h4>
+            </div>
+            <div class="row">
+                <div class="col s4">
+                    <div class="card hoverable" onclick="playRound('rock')">
+                        <div class="card-content">
+                            <div class="center-align"> <!-- Center the image -->
+                                <img src="./img/rock_dark.jpg" alt="Rock" class="responsive-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="card hoverable" onclick="playRound('paper')">
+                        <div class="card-content">
+                            <div class="center-align"> <!-- Center the image -->
+                                <img src="./img/paper_dark.jpg" alt="Paper" class="responsive-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="card hoverable" onclick="playRound('scissors')">
+                        <div class="card-content">
+                            <div class="center-align"> <!-- Center the image -->
+                                <img src="./img/scissors_dark.jpg" alt="Scissors" class="responsive-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="center-align">
+                <h4>Computer's Choice</h4>
+                <div id="computer-choice">Awaiting computer's choice...</div>
+            </div>
+        </section>
+        <section class="scoreResults">
+            <div class="center-align">
+                <h5>Round Score</h5>
+                <div class="score">
+                    <div class="user-score">
+                        <span>You</span>
+                        <div class="score-number" id="user-score">0</div>
+                    </div>
+                    
+                    <div class="message"></div>
+
+                    <div class="comp-score">
+                        <span>Computer</span>
+                        <div class="score-number" id="comp-score">0</div>
+                    </div>
+                </div>
+               
+            </div>
+            <p id="result"></p>
+        </section>
+
+        <div>
+            <div class="final-screen">
+                <div class="center-align">
+                    <h3 class="final-message"></h3>
+                    <p><span class="final-score"></span></p>
+                    <button class="play-again" onclick="location.reload();">Play again</button>
+                </div>
+            </div>
+        </div>
+    </main>
+ 
+    
+    <script src="/js/main.js"></script>
+</body>
+</html>
