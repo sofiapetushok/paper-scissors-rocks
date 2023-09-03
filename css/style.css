@@ -1,12 +1,12 @@
 nav {
     background: linear-gradient(114deg, #000000de, #004e4bb8);
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 * {
     box-sizing: border-box;
 }
 .night-sky-bg {
-    background-image: url('../img/dark.jpg'); /* Replace 'night-sky.jpg' with your actual image path */
+    background-image: url('/img/paper.png'); /* Replace 'night-sky.jpg' with your actual image path */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
