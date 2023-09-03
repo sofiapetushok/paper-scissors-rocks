@@ -1,0 +1,156 @@
+nav {
+    background: linear-gradient(114deg, #000000de, #004e4bb8);
+    margin-bottom: 100px;
+}
+* {
+    box-sizing: border-box;
+}
+.night-sky-bg {
+    background-image: url('/img/dark.jpg'); /* Replace 'night-sky.jpg' with your actual image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #ffffff; /* Text color for dark theme */
+}
+section {
+    margin-bottom: 50px;
+}
+.card {
+    width: 200px;
+    margin: auto;
+    border-radius: 8px;
+    background-color: black;
+}
+.card .card-content {
+    padding: 0;
+    width: 200px;
+    border-radius: 8px;
+    margin: auto;
+    background-color: black;
+    border: 2px solid #555;
+}
+.card.hoverable {
+    cursor: pointer;
+}
+.card .card-content {
+    background: transparent;
+    padding: 0;
+    transition: all 0.2s ease-out;
+    background-color: black;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+ 
+.card .card-content:hover {
+    border-color: #0dccc6b8; /* Change the border color on hover */
+}
+.card.hoverable::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    pointer-events: none;
+    animation: border-animation 2s infinite alternate;
+}
+img.responsive-img {
+    height: 150px;
+    width: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+@keyframes border-animation {
+    0% {
+        transform: scaleX(1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scaleX(1.2);
+        opacity: 0;
+    }
+}
+
+button.play-again {
+    margin: auto;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    color: #fff;
+    border: 1px solid #b9b9b9d9;
+    background-color: #414141d9;
+    transition: all ease-out 0.2s;
+}
+button.play-again:hover {
+    cursor: pointer;
+    background-color: #747474d9;
+    color: white;
+    transform: perspective(200px);
+    border-color: #a3a3a3d9;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+.text-capitalize {
+    text-transform: capitalize;
+}
+.message {
+    display: none;
+    width: fit-content;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 900;
+    vertical-align: middle;
+}
+.message.show {
+    display: block;
+}
+.tie{
+    background-color: #0f2244cf;
+}
+.win {
+    background-color: #0f4418cf;
+}
+.lose {
+    background-color: #540f0fcf;
+}
+.score {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.user-score,
+.comp-score {
+    text-align: center;
+    border: 2px solid #eee;
+    background-color: #5c5c5cad; /* Choose your desired background color */
+    border-radius: 8px;
+    padding: 8px;
+    color: white;
+    width: 100px; /* Adjust the width as needed */
+}
+
+.score-number {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold;
+}
+
+.final-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+
+}
+.final-screen.show {
+    display: block; /* Show the final-score screen when needed */
+}
