@@ -10,8 +10,8 @@ function getComputerChoice() {
 function playRound(playerSelection, computerSelection) { 
     
     computerSelection = getComputerChoice();
-    console.log(playerSelection);
-    console.log(computerSelection);
+    // console.log(playerSelection);
+    // console.log(computerSelesction);
     let computerChoce = document.querySelector('#computer-choice');
     computerChoce.innerHTML = `
             <div class="card">
