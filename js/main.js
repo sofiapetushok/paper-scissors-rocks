@@ -7,7 +7,6 @@ function getComputerChoice() {
     let randInd = Math.floor(Math.random() * choices.length);
     return choices[randInd];
 } 
-
 function playRound(playerSelection, computerSelection) { 
     
     computerSelection = getComputerChoice();
