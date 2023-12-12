@@ -21,9 +21,7 @@ h4 {
     background-position: center center;
     color: #ffffff; /* Text color for dark theme */
 }
-section {
-    margin: 50px 20px;
-}
+
 .card {
     width: 200px;
     margin: auto;
@@ -165,6 +163,11 @@ button.play-again:hover {
     display: block; /* Show the final-score screen when needed */
 }
 
+@media (min-width: 991px) {
+    section {
+        margin: 50px 20px;
+    }
+}
 
 @media (max-width: 768px) {
     .card {
