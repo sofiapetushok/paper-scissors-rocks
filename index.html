@@ -13,7 +13,7 @@
         <nav>
             <div class="container">
                 <div class="nav-wrapper">
-                    <a href="#" class="brand-logo">Rock Paper Scissors</a>
+                    <h4>Rock Paper Scissors</h4>
                 </div>
             </div>
         </nav>
@@ -21,22 +21,22 @@
     <main class="container ">
         <section>
             <div class="center-align">
-                <h4>Choose your weapon</h4>
+                <h6>Choose your weapon</h6>
             </div>
             <div class="row">
-                <div class="col s4">
-                    <button onclick="playRound('rock');">Rock</button>
+                <div class="col s4 m4">
+                    <button class="hidden play-btn" onclick="playRound('rock');">Rock</button>
                 </div>
-                <div class="col s4">
-                    <button onclick="playRound('paper');">Paper</button>
+                <div class="col s4 m4">
+                    <button class="hidden play-btn" onclick="playRound('paper');">Paper</button>
                 </div>
-                <div class="col s4">
-                    <button onclick="playRound('scissors');">Scissors</button>
+                <div class="col s4 m4">
+                    <button class="hidden play-btn" onclick="playRound('scissors');">Scissors</button>
                 </div>
 
 
 
-                <div class="col s4">
+                <div class="col s4 m4">
                     <div class="card hoverable" onclick="playRound('rock')">
                         <div class="card-content">
                             <div class="center-align"> <!-- Center the image -->
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col s4">
+                <div class="col s4 m4">
                     <div class="card hoverable" onclick="playRound('paper')">
                         <div class="card-content">
                             <div class="center-align"> <!-- Center the image -->
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col s4">
+                <div class="col s4 m4 ">
                     <div class="card hoverable" onclick="playRound('scissors')">
                         <div class="card-content">
                             <div class="center-align"> <!-- Center the image -->
@@ -67,7 +67,7 @@
         </section>
         <section>
             <div class="center-align">
-                <h4>Computer's Choice</h4>
+                <h6>Computer's Choice</h6>
                 <div id="computer-choice">Awaiting computer's choice...</div>
             </div>
         </section>
@@ -78,15 +78,13 @@
                     <div class="user-score">
                         <span>You</span>
                         <div class="score-number" id="user-score">0</div>
-                    </div>
-                    
-                    <div class="message"></div>
-
+                    </div> 
                     <div class="comp-score">
                         <span>Computer</span>
                         <div class="score-number" id="comp-score">0</div>
-                    </div>
+                    </div> 
                 </div>
+                <div class="message"></div>
                
             </div>
             <p id="result"></p>
